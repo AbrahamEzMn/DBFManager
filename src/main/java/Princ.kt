@@ -11,10 +11,6 @@ import java.awt.FlowLayout
 
 
 
-
-
-
-
 class Princ : JFrame() {
 
     private val button1: JButton
