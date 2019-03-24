@@ -3,6 +3,9 @@ package dbf
 import com.linuxense.javadbf.*
 import java.io.FileInputStream
 import java.io.IOException
+import java.io.FileOutputStream
+import com.linuxense.javadbf.DBFWriter
+import java.lang.Exception
 
 
 class DbfController {
@@ -30,6 +33,28 @@ class DbfController {
 
 
         return dbfFile
+    }
+
+    fun writeFile(path: String, dbfFile: DbfFile) : Boolean {
+
+        try {
+            val writer = DBFWriter(FileOutputStream(path))
+
+            writer.setFields(dbfFile.headers!!.toTypedArray())
+
+            for (row in dbfFile.rows!!.toTypedArray()) {
+                writer.addRecord(row)
+            }
+
+            writer.close()
+
+            return true
+        }
+        catch (e:Exception){
+            e.printStackTrace()
+        }
+
+        return false
     }
 
     private fun readHeaders(dbfReader:DBFReader): ArrayList<DBFField> {

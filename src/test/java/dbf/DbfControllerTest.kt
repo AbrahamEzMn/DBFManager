@@ -4,6 +4,7 @@ package dbf
 import org.junit.Test
 import java.nio.file.Paths
 import kotlin.test.assertEquals
+import kotlin.test.assertFalse
 import kotlin.test.assertNotNull
 import kotlin.test.assertNull
 
@@ -26,6 +27,16 @@ class DbfControllerTest {
 
         val file = dbfController.readFile("$path/src/test/java/dbf/archivoNoExistente.dbf")
         assertNull(file)
+    }
+
+
+    @Test fun `WriteFile`() {
+
+        val dbfController = DbfController()
+        val file = dbfController.readFile("$path/src/test/java/dbf/sample.dbf")
+        val test = dbfController.writeFile("$path/src/test/java/dbf/sample-write.dbf", file!!)
+
+        assert(test)
     }
 }
 
