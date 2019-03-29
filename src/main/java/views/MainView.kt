@@ -1,5 +1,7 @@
 package views
 
+import dbf.DbfController
+import dbf.DbfFile
 import java.awt.*
 import java.awt.event.*
 import javax.swing.*
@@ -18,6 +20,11 @@ import javax.swing.JFrame
 
 
 import javax.swing.GroupLayout.Alignment.*
+import javax.swing.JFileChooser
+import javax.swing.filechooser.FileNameExtensionFilter
+import javax.swing.table.TableModel
+import javax.swing.table.DefaultTableModel
+
 
 
 
@@ -40,20 +47,12 @@ class MainView : JFrame() {
         layout.autoCreateContainerGaps=true
 
         //Crear el boton
-        this.cargarFileBtn = JButton("Prueba")
+        this.cargarFileBtn = JButton("Cargar DBF")
         this.cargarFileBtn.setBounds(30, 40, 200, 300)
 
 
         //Crear el table
-
-        // Data to be displayed in the JTable
-        val data = arrayOf(arrayOf("Kundan Kumar Jha", "4031", "CSE"), arrayOf("Anand Jha", "6014", "IT"))
-
-        // Column Names
-        val columnNames = arrayOf("Name", "Roll Number", "Department")
-
-
-        this.dbfFileTable = JTable(data, columnNames)
+        this.dbfFileTable = JTable()
 
         var scrollPane =  JScrollPane(dbfFileTable)
         dbfFileTable.fillsViewportHeight = true
@@ -95,11 +94,9 @@ class MainView : JFrame() {
         }*/
 
 
-
-
         this.add(newPanel)
 
-        newPanel.border = BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(), "Login Panel")
+        //newPanel.border = BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(), "Login Panel")
 
         //this.pack()
         this.setLocationRelativeTo(null)
@@ -109,7 +106,24 @@ class MainView : JFrame() {
 
 
     private fun onClickLoadFile (e: ActionEvent) {
+        val chooser = JFileChooser()
+        val filter = FileNameExtensionFilter(
+                "DBF Files", "dbf")
+        chooser.fileFilter = filter
+        val returnVal = chooser.showOpenDialog(parent)
+        if (returnVal == JFileChooser.APPROVE_OPTION) {
+            println("You chose to open this file: " + chooser.selectedFile.name)
 
+            var file : DbfFile = DbfController().readFile(chooser.selectedFile.path)!!
+
+            var model = DefaultTableModel()
+
+            file!!.headers?.forEach { model.addColumn(it) }
+            file!!.rows?.forEach { model.addRow(it) }
+
+            this.dbfFileTable.model = model
+
+        }
     }
 
 /*
