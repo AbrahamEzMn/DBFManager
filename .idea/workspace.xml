@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f3bca4c-2032-48fe-98e3-9cb44be501d4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/views/MainView.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dbf/DbfController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dbf/DbfController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dbf/DbfControllerTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dbf/DbfControllerTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dbf/DbfController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dbf/DbfController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/dbf/DbfControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/dbf/DbfControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Princ.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Princ.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dbf/sample-write.dbf" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dbf/sample-write.dbf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dbf/sample.dbf" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dbf/sample.dbf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ButtonClickListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ButtonMouseListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Princ$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Princ.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PrincKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PrincKt.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,34 +37,32 @@
     <SUITE FILE_PATH="coverage/DBFManager$Example.ic" NAME="Example Coverage Results" MODIFIED="1553455137070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>dbf.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/DBFManager$All_in_DBFManager.ic" NAME="All in DBFManager Coverage Results" MODIFIED="1553461977684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/DBFManager$All_in_DBFManager.ic" NAME="All in DBFManager Coverage Results" MODIFIED="1553825665903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CoverageOptionsProvider">
     <option name="myAddOrReplace" value="0" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="50" />
+    <option name="myElementSize" value="48" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Princ.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="62" selection-start-line="62" selection-end-line="62" />
+            <state relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dbf/DbfController.kt">
+        <entry file="file://$PROJECT_DIR$/src/main/java/views/MainView.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+            <state relative-caret-position="184">
+              <caret line="151" lean-forward="true" selection-start-line="151" selection-end-line="151" />
               <folding>
-                <element signature="e#13#199#0" expanded="true" />
-                <element signature="n#!!block;n#getHeaders#0;n#!!block;n#DbfController#0" />
-                <element signature="n#!!block;n#readRows#0;n#!!block;n#DbfController#0" />
+                <element signature="e#15#506#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,20 +71,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/dbf/DbfControllerTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
+            <state relative-caret-position="180">
               <caret line="36" selection-start-line="36" selection-end-line="36" />
-              <folding>
-                <element signature="e#14#130#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dbf/DbfFile.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -115,10 +104,11 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/DbfController.kt" />
         <option value="$PROJECT_DIR$/src/main/java/dbf/DbfFile.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/Princ.kt" />
         <option value="$PROJECT_DIR$/src/test/java/dbf/dbfController_test.kt" />
         <option value="$PROJECT_DIR$/src/test/java/dbf/DbfControllerTest.kt" />
         <option value="$PROJECT_DIR$/src/main/java/dbf/DbfController.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/Princ.kt" />
+        <option value="$PROJECT_DIR$/src/main/java/views/MainView.kt" />
       </list>
     </option>
   </component>
@@ -136,7 +126,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Tests'; set:Tests; class com.intellij.psi.search.scope.TestsScope">
           <expand>
@@ -159,6 +148,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -196,6 +186,14 @@
               <item name="DBFManager" type="b2602c69:ProjectViewProjectNode" />
               <item name="DBFManager" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DBFManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DBFManager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -220,13 +218,15 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553462494348" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553830239176" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/views" />
       <recent name="$PROJECT_DIR$/src/test/java/dbf" />
       <recent name="$PROJECT_DIR$/src/main/java/dbf" />
     </key>
@@ -243,7 +243,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in DBFManager">
+  <component name="RunManager" selected="Kotlin.PrincKt">
     <configuration name="All in DBFManager" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="DBFManager" />
       <option name="PACKAGE_NAME" value="" />
@@ -299,38 +299,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DbfController_testKt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DBFManager" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dbf.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dbf" />
-      <option name="MAIN_CLASS_NAME" value="dbf.DbfController_testKt" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Example" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DBFManager" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dbf.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dbf" />
-      <option name="MAIN_CLASS_NAME" value="dbf.Example" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="dbf in DBFManager" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="DBFManager" />
       <extension name="coverage">
@@ -348,22 +316,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PrincKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="DBFManager" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="PrincKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="views.MainViewKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="DBFManager" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="views.MainViewKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.dbf in DBFManager" />
       <item itemvalue="JUnit.All in DBFManager" />
-      <item itemvalue="JUnit.DbfController_testKt" />
-      <item itemvalue="JUnit.Example" />
       <item itemvalue="JUnit.DbfControllerTest" />
       <item itemvalue="JUnit.DbfControllerTest.ReadFile - Archivo correcto" />
       <item itemvalue="JUnit.DbfControllerTest.WriteFile" />
+      <item itemvalue="Kotlin.PrincKt" />
+      <item itemvalue="Kotlin.views.MainViewKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.PrincKt" />
+        <item itemvalue="Kotlin.views.MainViewKt" />
         <item itemvalue="JUnit.DbfControllerTest.WriteFile" />
         <item itemvalue="JUnit.DbfControllerTest.ReadFile - Archivo correcto" />
         <item itemvalue="JUnit.DbfControllerTest" />
-        <item itemvalue="JUnit.Example" />
-        <item itemvalue="JUnit.DbfController_testKt" />
       </list>
     </recent_temporary>
   </component>
@@ -381,15 +375,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_DBFManager - 2019.03.24 at 15h 11m 18s.xml">
-      <configuration name="All in DBFManager" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_DBFManager - 2019.03.24 at 15h 11m 55s.xml">
-      <configuration name="All in DBFManager" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_DBFManager - 2019.03.24 at 15h 12m 32s.xml">
-      <configuration name="All in DBFManager" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_DBFManager - 2019.03.24 at 15h 12m 36s.xml">
       <configuration name="All in DBFManager" configurationId="JUnit" />
     </history-entry>
@@ -411,6 +396,15 @@
     <history-entry file="All_in_DBFManager - 2019.03.24 at 15h 19m 23s.xml">
       <configuration name="All in DBFManager" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_DBFManager - 2019.03.28 at 20h 09m 49s.xml">
+      <configuration name="All in DBFManager" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_DBFManager - 2019.03.28 at 20h 12m 40s.xml">
+      <configuration name="All in DBFManager" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_DBFManager - 2019.03.28 at 20h 14m 26s.xml">
+      <configuration name="All in DBFManager" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -423,8 +417,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1293" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4975728" visible="true" weight="0.24218124" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4975728" visible="true" weight="0.24619086" />
       <window_info id="Structure" order="1" sideWeight="0.50242716" side_tool="true" weight="0.24218124" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -435,15 +430,14 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32899022" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39739415" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39739415" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32899022" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32899022" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32736155" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32899022" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32899022" />
-      <window_info anchor="right" id="Coverage" sideWeight="0.50242716" side_tool="true" visible="true" weight="0.24939856" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" sideWeight="0.4975728" weight="0.24939856" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -452,25 +446,8 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Maven" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Coverage" order="8" sideWeight="0.50242716" side_tool="true" weight="0.24939856" />
     </layout>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/java/dbf/DbfController.kt</url>
-          <line>53</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/java/dbf/DbfController.kt</url>
-          <line>48</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -506,45 +483,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="4" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Princ.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/dbf/DbfFile.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        <state relative-caret-position="180">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/dbf/DbfControllerTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
+        <state relative-caret-position="180">
           <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="e#14#130#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dbf/DbfController.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+        <state relative-caret-position="705">
+          <caret line="53" column="31" lean-forward="true" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
           <folding>
             <element signature="e#13#199#0" expanded="true" />
-            <element signature="n#!!block;n#getHeaders#0;n#!!block;n#DbfController#0" />
             <element signature="n#!!block;n#readRows#0;n#!!block;n#DbfController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Princ.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/views/MainView.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="151" lean-forward="true" selection-start-line="151" selection-end-line="151" />
+          <folding>
+            <element signature="e#15#506#0" expanded="true" />
           </folding>
         </state>
       </provider>
