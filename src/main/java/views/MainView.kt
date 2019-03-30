@@ -62,16 +62,13 @@ class MainView : JFrame() {
         layout.setHorizontalGroup(
                 layout.createSequentialGroup()
                         .addComponent(this.cargarFileBtn)
-
                             .addComponent(scrollPane)
-
         )
         layout.setVerticalGroup(
                 layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                                 .addComponent(this.cargarFileBtn)
-
-                                    .addComponent(scrollPane))
+                                .addComponent(scrollPane))
         )
 
         this.menuBar = JMenuBar()
@@ -88,17 +85,12 @@ class MainView : JFrame() {
         menu.add(menuItem)
 
         cargarFileBtn.addActionListener { e: ActionEvent -> this.onClickLoadFile(e) }
-      /*  button1.apply {
-            addActionListener(ButtonClickListener() )
-            addMouseListener( ButtonMouseListener())
-        }*/
-
 
         this.add(newPanel)
 
         //newPanel.border = BorderFactory.createTitledBorder(BorderFactory.createEtchedBorder(), "Login Panel")
 
-        //this.pack()
+        this.pack()
         this.setLocationRelativeTo(null)
 
         this.jMenuBar = menuBar
@@ -107,13 +99,10 @@ class MainView : JFrame() {
 
     private fun onClickLoadFile (e: ActionEvent) {
         val chooser = JFileChooser()
-        val filter = FileNameExtensionFilter(
-                "DBF Files", "dbf")
+        val filter = FileNameExtensionFilter("DBF Files", "dbf")
         chooser.fileFilter = filter
         val returnVal = chooser.showOpenDialog(parent)
         if (returnVal == JFileChooser.APPROVE_OPTION) {
-            println("You chose to open this file: " + chooser.selectedFile.name)
-
             var file : DbfFile = DbfController().readFile(chooser.selectedFile.path)!!
 
             var model = DefaultTableModel()
@@ -122,46 +111,6 @@ class MainView : JFrame() {
             file!!.rows?.forEach { model.addRow(it) }
 
             this.dbfFileTable.model = model
-
         }
     }
-
-/*
-    private  class ButtonClickListener : ActionListener {
-        override fun actionPerformed(e: ActionEvent) {
-            System.out.println(e.actionCommand)
-            var str = when (e.actionCommand) {
-                "OK" -> {"Ok Button clicked."}
-                "Submit" -> "Submit Button clicked."
-                else -> "Cancel Button clicked."
-            }
-
-        }
-    }
-
-
-
-
-    private  class ButtonMouseListener : MouseListener {
-        override fun mouseEntered(e: MouseEvent?) {
-            System.out.println("not implemented") //To change body of created functions use File | Settings | File Templates.
-        }
-
-        override fun mouseClicked(e: MouseEvent?) {
-            System.out.println("not implemented") //To change body of created functions use File | Settings | File Templates.
-        }
-
-        override fun mouseExited(e: MouseEvent?) {
-            System.out.println("not implemented") //To change body of created functions use File | Settings | File Templates.
-        }
-
-        override fun mousePressed(e: MouseEvent?) {
-            System.out.println("not implemented") //To change body of created functions use File | Settings | File Templates.
-        }
-
-        override fun mouseReleased(e: MouseEvent?) {
-            System.out.println("not implemented") //To change body of created functions use File | Settings | File Templates.
-        }
-    }*/
-
 }
